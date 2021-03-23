@@ -1,0 +1,405 @@
+[
+  {
+    "line": 6,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-22T22:29:02.967Z",
+        "line": 8,
+        "name": "Validar que la busqueda de google este funcionando",
+        "description": "",
+        "id": "testbuscarengoogle;validar-que-la-busqueda-de-google-este-funcionando",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2336271300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "navegador esta abierto",
+            "match": {
+              "location": "StepsDefinitions.GoogleSearch.navegador_esta_abierto()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2127016900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "usar el buscador de google",
+            "match": {
+              "location": "StepsDefinitions.GoogleSearch.usar_el_buscador_de_google()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 171540800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "usuario introduce un texto al buscador",
+            "match": {
+              "location": "StepsDefinitions.GoogleSearch.usuario_introduce_un_texto_al_buscador()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1275283400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "presiona enter",
+            "match": {
+              "location": "StepsDefinitions.GoogleSearch.presiona_enter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 858264500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "usuario puede navegar a los resultados del buscador",
+            "match": {
+              "location": "StepsDefinitions.GoogleSearch.usuario_puede_navegar_a_los_resultados_del_buscador()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "TestBuscarEnGoogle",
+    "description": "",
+    "id": "testbuscarengoogle",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/GoogleSearch.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-22T22:29:09.838Z",
+        "line": 14,
+        "name": "Validar que usuario creado se logue al sitio correctamente con sus credenciales",
+        "description": "",
+        "id": "testlogeopagetestproject;validar-que-usuario-creado-se-logue-al-sitio-correctamente-con-sus-credenciales;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1143496500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "abrir el navegador",
+            "match": {
+              "location": "StepsDefinitions.LoginDemoStepsPF.abrir_el_navegador()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2350888700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "usuario esta en la pagina de inicio de la sesion",
+            "match": {
+              "location": "StepsDefinitions.LoginDemoStepsPF.usuario_esta_en_la_pagina_de_inicio_de_la_sesion()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1188656000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "escribe Patricia y 12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Patricia",
+                  "offset": 8
+                },
+                {
+                  "val": "12345",
+                  "offset": 19
+                }
+              ],
+              "location": "StepsDefinitions.LoginDemoStepsPF.escribe_usuario_y_contrasena(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 69819800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "realizar click al boton login",
+            "match": {
+              "location": "StepsDefinitions.LoginDemoStepsPF.realizar_click_al_boton_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 662415800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "el usuario navega a la pagina inicial",
+            "match": {
+              "location": "StepsDefinitions.LoginDemoStepsPF.el_usuario_navega_a_la_pagina_inicial()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-22T22:29:15.266Z",
+        "line": 15,
+        "name": "Validar que usuario creado se logue al sitio correctamente con sus credenciales",
+        "description": "",
+        "id": "testlogeopagetestproject;validar-que-usuario-creado-se-logue-al-sitio-correctamente-con-sus-credenciales;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1119814700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "abrir el navegador",
+            "match": {
+              "location": "StepsDefinitions.LoginDemoStepsPF.abrir_el_navegador()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2533287100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "usuario esta en la pagina de inicio de la sesion",
+            "match": {
+              "location": "StepsDefinitions.LoginDemoStepsPF.usuario_esta_en_la_pagina_de_inicio_de_la_sesion()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1162247200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "escribe Felipe y 12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Felipe",
+                  "offset": 8
+                },
+                {
+                  "val": "12345",
+                  "offset": 17
+                }
+              ],
+              "location": "StepsDefinitions.LoginDemoStepsPF.escribe_usuario_y_contrasena(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 59506500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "realizar click al boton login",
+            "match": {
+              "location": "StepsDefinitions.LoginDemoStepsPF.realizar_click_al_boton_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 648452200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "el usuario navega a la pagina inicial",
+            "match": {
+              "location": "StepsDefinitions.LoginDemoStepsPF.el_usuario_navega_a_la_pagina_inicial()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-22T22:29:20.799Z",
+        "line": 16,
+        "name": "Validar que usuario creado se logue al sitio correctamente con sus credenciales",
+        "description": "",
+        "id": "testlogeopagetestproject;validar-que-usuario-creado-se-logue-al-sitio-correctamente-con-sus-credenciales;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1127981500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "abrir el navegador",
+            "match": {
+              "location": "StepsDefinitions.LoginDemoStepsPF.abrir_el_navegador()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 991166300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "usuario esta en la pagina de inicio de la sesion",
+            "match": {
+              "location": "StepsDefinitions.LoginDemoStepsPF.usuario_esta_en_la_pagina_de_inicio_de_la_sesion()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1157977900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "escribe Hola y 12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hola",
+                  "offset": 8
+                },
+                {
+                  "val": "12345",
+                  "offset": 15
+                }
+              ],
+              "location": "StepsDefinitions.LoginDemoStepsPF.escribe_usuario_y_contrasena(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60847300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "realizar click al boton login",
+            "match": {
+              "location": "StepsDefinitions.LoginDemoStepsPF.realizar_click_al_boton_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 618961500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "el usuario navega a la pagina inicial",
+            "match": {
+              "location": "StepsDefinitions.LoginDemoStepsPF.el_usuario_navega_a_la_pagina_inicial()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "TestLogeoPageTestProject",
+    "description": "",
+    "id": "testlogeopagetestproject",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/LoginDemo.feature",
+    "tags": []
+  },
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-22T22:29:24.766Z",
+        "line": 6,
+        "name": "Verificar que login acceda con las credenciales correctas",
+        "description": "",
+        "id": "testloginpageautomation;verificar-que-login-acceda-con-las-credenciales-correctas",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Necesito loguearme en la pagina",
+            "match": {
+              "location": "StepsDefinitions.LoginSteps.necesito_loguearme_en_la_pagina()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Uso username y password",
+            "match": {
+              "location": "StepsDefinitions.LoginSteps.uso_username_y_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Realizo click en el boton de login",
+            "match": {
+              "location": "StepsDefinitions.LoginSteps.realizo_click_en_el_boton_de_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Validar que el usuario este logeado",
+            "match": {
+              "location": "StepsDefinitions.LoginSteps.validar_que_el_usuario_este_logeado()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "TestLoginPageAutomation",
+    "description": "",
+    "id": "testloginpageautomation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/login.feature",
+    "tags": []
+  }
+]

@@ -3,6 +3,7 @@ package StepsDefinitions;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import PageFactory.HomePagePF;
 import PageFactory.LoginPagePF;
@@ -22,11 +23,13 @@ public class LoginDemoStepsPF {
 		projectPath = System.getProperty("user.dir");
 		System.out.println("El path es:" + projectPath);
 		System.setProperty("webdriver.chrome.driver", projectPath + "/src/test/resources/Drivers/chromedriver.exe");
-		driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		  options.addArguments(
+		   "--headless");
+		  driver = new ChromeDriver(options);
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 	}
-
 	@And("usuario esta en la pagina de inicio de la sesion")
 	public void usuario_esta_en_la_pagina_de_inicio_de_la_sesion() {
 

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="22.001">
+    <testcase classname="TestBuscarEnGoogle" name="Validar que la busqueda de google este funcionando" time="6.854">
+        <system-out><![CDATA[Given navegador esta abierto................................................passed
+And usar el buscador de google..............................................passed
+When usuario introduce un texto al buscador.................................passed
+And presiona enter..........................................................passed
+Then usuario puede navegar a los resultados del buscador....................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="TestLogeoPageTestProject" name="Validar que usuario creado se logue al sitio correctamente con sus credenciales" time="5.423">
+        <system-out><![CDATA[Given abrir el navegador....................................................passed
+And usuario esta en la pagina de inicio de la sesion........................passed
+When escribe Patricia y 12345...............................................passed
+And realizar click al boton login...........................................passed
+Then el usuario navega a la pagina inicial..................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="TestLogeoPageTestProject" name="Validar que usuario creado se logue al sitio correctamente con sus credenciales 2" time="5.529">
+        <system-out><![CDATA[Given abrir el navegador....................................................passed
+And usuario esta en la pagina de inicio de la sesion........................passed
+When escribe Felipe y 12345.................................................passed
+And realizar click al boton login...........................................passed
+Then el usuario navega a la pagina inicial..................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="TestLogeoPageTestProject" name="Validar que usuario creado se logue al sitio correctamente con sus credenciales 3" time="3.962">
+        <system-out><![CDATA[Given abrir el navegador....................................................passed
+And usuario esta en la pagina de inicio de la sesion........................passed
+When escribe Hola y 12345...................................................passed
+And realizar click al boton login...........................................passed
+Then el usuario navega a la pagina inicial..................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="TestLoginPageAutomation" name="Verificar que login acceda con las credenciales correctas" time="0.002">
+        <system-out><![CDATA[Given Necesito loguearme en la pagina.......................................passed
+When Uso username y password................................................passed
+And Realizo click en el boton de login......................................passed
+Then Validar que el usuario este logeado....................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

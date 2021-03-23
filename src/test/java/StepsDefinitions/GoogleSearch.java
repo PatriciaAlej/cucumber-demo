@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -13,9 +14,9 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class GoogleSearch {
-	
-    WebDriver driver = null;
-    
+
+	WebDriver driver = null;
+
 	@Given("navegador esta abierto")
 	public void navegador_esta_abierto() {
 
@@ -23,9 +24,10 @@ public class GoogleSearch {
 		System.out.println("Paso 1 - Abrir el navegador");
 		projectPath = System.getProperty("user.dir");
 		System.out.println("El path es:" + projectPath);
-		System.setProperty("webdriver.chrome.driver",
-			projectPath + "/src/test/resources/Drivers/chromedriver.exe");
-		driver = new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", projectPath + "/src/test/resources/Drivers/chromedriver.exe");
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
+		driver = new ChromeDriver(options);
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 	}

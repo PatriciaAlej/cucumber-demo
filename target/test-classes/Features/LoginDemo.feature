@@ -13,4 +13,4 @@ Feature: TestLogeoPageTestProject
       | usuario  | contrasena |
       | Patricia |      12345 |
       | Felipe   |      12345 |
-      | Hola     | asdf       |
+      | Hola     |      12345 |
